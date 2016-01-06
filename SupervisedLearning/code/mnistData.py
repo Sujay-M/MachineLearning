@@ -31,8 +31,8 @@ def getTrainData():
     return m,rows,cols,x,y
 
 def getTestData():
-    fI = '../../datasets/mnist/t10k-images.idx3-ubyte'
-    fL = '../../datasets/mnist/t10k-labels.idx1-ubyte'
-    m,rows,cols,x = getImages(fI)    
-    _,y = getLabels(fL)
+    fITest = '../../../datasets/mnist/t10k-images.idx3-ubyte'
+    fLTest = '../../../datasets/mnist/t10k-labels.idx1-ubyte'
+    m,rows,cols,x = getImages(fITest)    
+    _,y = getLabels(fLTest)
     return m,rows,cols,x,y
